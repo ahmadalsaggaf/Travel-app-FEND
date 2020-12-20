@@ -1,14 +1,23 @@
-var path = require('path')
+const dotenv = require('dotenv');
+dotenv.config();
+
+const path = require('path')
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
-var bodyParser = require('body-parser')
-var cors = require('cors')
+const bodyParser = require('body-parser')
+const cors = require('cors')
 
-var json = {
+// fetch npm to use fetch in node.js
+const fetch = require('node-fetch');
+
+const json = {
     'title': 'test json response',
     'message': 'this is a message',
     'time': 'now'
 }
+
+// Meaningcloud API info
+const apiKey =  process.env.API_KEY;
 
 const app = express()
 app.use(cors())
@@ -33,5 +42,6 @@ app.get('/test', function (req, res) {
 
 // designates what port the app will listen to for incoming requests
 app.listen(8081, function () {
-    console.log('Example app listening on port 8081!')
+    console.log('listening on port 8081!')
+    console.log(`My API key is ${process.env.API_KEY} it's okay you can hack me`);
 })
