@@ -27,7 +27,7 @@ else {
 }
 
 
-const postApi =  async (url= "", data) => {
+ async function postApi (url= "", data) {
 
     const res = await fetch(url, {
         method: 'POST',
