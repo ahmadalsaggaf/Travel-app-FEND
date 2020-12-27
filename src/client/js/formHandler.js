@@ -19,7 +19,7 @@ function handleSubmit(event) {
    }
 
 else {
-  alert('plese put vaild url');
+  alert('Please enter a valid URL');
 
 }
 
