@@ -24,7 +24,7 @@ app.use(
 app.use(express.static('dist'));
 
 app.get('/', function (req, res) {
-  res.status(200).sendFile('dist/index.html');
+  res.sendFile('dist/index.html');
 });
 
 // designates what port the app will listen to for incoming requests
