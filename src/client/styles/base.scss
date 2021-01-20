@@ -1,14 +1,51 @@
+
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
+    background:#005e45;
+    font-family:Helvetica;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
 }
 
 main {
-    flex: 2;
+    flex: 3;
 }
 
+
+h1{
+    text-align: center;
+    font-weight: 1200;
+    color: #e7e7e7;
+}
+
+h2{
+    text-align: center;
+    font-weight: 600;
+    color: #e7e7e7;
+}
+
+
 section {
-    max-width: 800px;
-    margin: 50px auto;
+    max-width: 1500px;
+    margin: 60px auto;
+}
+
+p{
+    text-align: center;
+    color: #e7e7e7;
+    font-weight: 400;
+}
+
+#block{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

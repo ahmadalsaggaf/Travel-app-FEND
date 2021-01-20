@@ -3,36 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sentiment Analysis Api</title>
+    <title>Travel App</title>
 </head>
 
 <body>
 
     <header>
-        <div class="">
-            Logo
-        </div>
-        <div class="">
-            navigation
-        </div>
+        <h1 class="title">Udacity Travel App</h1>
     </header>
 
     <main>
-        <section>
-            <form class="" onsubmit="return Client.handleSubmit(event)">
-                <input id="url" type="text" name="input" value="" placeholder="put your link here">
-                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
-                    onsubmit="return handleSubmit(event)">
+        <section id="inputs">
+            <form class="container">
+                <input type="text" placeholder="City" id="city" aria-label="City" required>
+                <input type="date" placeholder="Sart Date" id="startDate" aria-label="Date" required>
+                <input type="date" placeholder="End Date" id="endDate" aria-label="Date" required>
+                <button type="submit" id="submit">Start</button>
             </form>
-            <section>
+        </section>
 
-                <section>
-                    <strong>Sentiment Analysis Results:</strong>
-                    <div id="irony"></div>
-                    <div id="confidence"></div>
-                    <div id="agreement"></div>
-                    <div id="subjectivity"></div>
-                </section>
+        <section id="yourTrip"></section>
     </main>
 
     <footer>
