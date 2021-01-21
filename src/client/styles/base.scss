@@ -2,50 +2,63 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    background:#005e45;
-    font-family:Helvetica;
-}
-
-
-header{
-    display: flex;
-    justify-content: center;
+	color:  #070707;
+	font-family: Helvetica;
+	text-align: center;
+    margin: 0;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%23005e45' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 main {
-    flex: 3;
+    flex: 2;
 }
-
-
-h1{
-    text-align: center;
-    font-weight: 1200;
-    color: #e7e7e7;
-}
-
-h2{
-    text-align: center;
-    font-weight: 600;
-    color: #e7e7e7;
-}
-
 
 section {
     max-width: 1500px;
     margin: 60px auto;
 }
 
-p{
-    text-align: center;
-    color: #e7e7e7;
-    font-weight: 400;
+/*  Basic Styling To Override Default For Basic HTML Elements */
+#submit {
+	width: 57%;
+	height: 45px;
+	background: #005e45;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: Helvetica;
+	border: 2px solid #026b4f;
+	transition: border-width 0.6s linear;
+	text-align: center;
+	padding: 10px 10px 20px 10px;
+	margin-top: 10px;
 }
 
-#block{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+#submit:hover {
+	color: #7ec9b5;
+	cursor: pointer;
+	border-width: 10px;
 }
+
+
+input[type=date]::-webkit-datetime-edit {
+	color: #005e45; 
+	font-family: Helvetica;
+}
+
+
+::-webkit-input-placeholder {
+	color: #005e45; 
+	font-family: Helvetica;
+} 
+
+:place-holder-shown {
+	color: #005e45; 
+	font-family: Helvetica;
+} 
+
+::placeholder { /* Firefox, Chrome, Opera */
+	color: #005e45; 
+	font-family: Helvetica;
+} 
